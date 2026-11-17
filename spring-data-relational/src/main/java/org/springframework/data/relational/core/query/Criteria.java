@@ -24,6 +24,7 @@ import java.util.Map;
 import java.util.StringJoiner;
 
 import org.springframework.dao.InvalidDataAccessApiUsageException;
+import org.springframework.data.relational.core.dialect.Escaper;
 import org.springframework.data.relational.core.sql.IdentifierProcessing;
 import org.springframework.data.relational.core.sql.SqlIdentifier;
 import org.springframework.data.util.Pair;
@@ -490,6 +491,10 @@ public class Criteria implements CriteriaDefinition {
 			StringJoiner joiner = new StringJoiner(", ");
 			((Collection<?>) value).forEach(o -> joiner.add(renderValue(o)));
 			return joiner.toString();
+		}
+
+		if (value instanceof ValueFunction<?>) {
+			value = ((ValueFunction<?>) value).apply(Escaper.DEFAULT);
 		}
 
 		if (value != null) {
