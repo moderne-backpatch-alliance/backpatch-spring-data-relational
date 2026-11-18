@@ -1,0 +1,109 @@
+schema: osera-patch-evidence/0.1.0
+producer: moderne
+release: 2.4.18.1-backpatch-00013
+baseline: v2.4.18+backpatch.baseline
+fixes:
+  - cve: CVE-2026-41717
+    upstream_fix_url: https://github.com/spring-projects/spring-data-mongodb/commit/7d2ea784d262bf4bf4ea8402505f491c8ab66fcc
+    advisory_url: https://nvd.nist.gov/vuln/detail/CVE-2026-41717
+    patch_commit_url: https://github.com/moderne-backpatch-alliance/backpatch-spring-data-mongodb/commit/7ee7b5e
+    basis: backport
+    artifacts:
+      - org.springframework.data:spring-data-mongodb
+    note: Carried from 2.4.18.1-backpatch-00001; ported onto 2.4.18; fixed at 3.4.18.1-backpatch-00001 (backpatch-spring-data-mongodb@7ee7b5e).
+  - cve: CVE-2026-41729
+    upstream_fix_url: https://github.com/spring-projects/spring-data-rest/commit/9ba7da5cc686f22e2ce51e5740afc48b9b03621f
+    advisory_url: https://nvd.nist.gov/vuln/detail/CVE-2026-41729
+    patch_commit_url: https://github.com/moderne-backpatch-alliance/backpatch-spring-data-rest/commit/87cd40e
+    basis: backport
+    artifacts:
+      - org.springframework.data:spring-data-rest-webmvc
+    note: Carried from 2.4.18.1-backpatch-00002; ported onto 2.4.18; fixed at 3.7.18.1-backpatch-00002 (backpatch-spring-data-rest@87cd40e).
+  - cve: CVE-2026-41716
+    upstream_fix_url: https://github.com/spring-projects/spring-data-commons/commit/2398607384927743a89ce9e40e05ae70f766de34
+    advisory_url: https://nvd.nist.gov/vuln/detail/CVE-2026-41716
+    patch_commit_url: https://github.com/moderne-backpatch-alliance/backpatch-spring-data-commons/commit/cbb399a
+    basis: backport
+    artifacts:
+      - org.springframework.data:spring-data-commons
+    note: Carried from 2.4.18.1-backpatch-00003; ported onto 2.4.18; fixed at 2.7.18.1-backpatch-00003 (backpatch-spring-data-commons@cbb399a).
+  - cve: CVE-2026-41728
+    upstream_fix_url: https://github.com/spring-projects/spring-data-rest/commit/d5b4de42cbe498c38401965aa969afe3c4e882fc
+    advisory_url: https://nvd.nist.gov/vuln/detail/CVE-2026-41728
+    patch_commit_url: https://github.com/moderne-backpatch-alliance/backpatch-spring-data-rest/commit/e82ce85
+    basis: backport
+    artifacts:
+      - org.springframework.data:spring-data-rest-webmvc
+    note: Carried from 2.4.18.1-backpatch-00004; ported onto 2.4.18; fixed at 3.7.18.1-backpatch-00004 (backpatch-spring-data-rest@e82ce85).
+  - cve: CVE-2026-41719
+    upstream_fix_url: https://github.com/spring-projects/spring-data-keyvalue/commit/27a46d5294403fee142b9619df05d85db61830ec
+    advisory_url: https://nvd.nist.gov/vuln/detail/CVE-2026-41719
+    patch_commit_url: https://github.com/moderne-backpatch-alliance/backpatch-spring-data-keyvalue/commit/aecb98f
+    basis: backport
+    artifacts:
+      - org.springframework.data:spring-data-keyvalue
+    note: Carried from 2.4.18.1-backpatch-00005; ported onto 2.4.18; fixed at 2.7.18.1-backpatch-00005 (backpatch-spring-data-keyvalue@aecb98f).
+  - cve: CVE-2026-41696
+    upstream_fix_url: https://github.com/spring-projects/spring-data-mongodb/commit/24d5afc0c7df223150e06fce3f64c226bcc88ca2
+    advisory_url: https://nvd.nist.gov/vuln/detail/CVE-2026-41696
+    patch_commit_url: https://github.com/moderne-backpatch-alliance/backpatch-spring-data-mongodb/commit/bd2432f
+    basis: adapted
+    artifacts:
+      - org.springframework.data:spring-data-mongodb
+    note: Carried from 2.4.18.1-backpatch-00006; ported onto 2.4.18; fixed at 3.4.18.1-backpatch-00006 (backpatch-spring-data-mongodb@bd2432f).
+  - cve: CVE-2026-47849
+    upstream_fix_url: https://github.com/spring-projects/spring-data-rest/commit/cb2df4edc19cbb53a6affc6ef72ca1cc9aa2e0ce
+    advisory_url: https://nvd.nist.gov/vuln/detail/CVE-2026-47849
+    patch_commit_url: https://github.com/moderne-backpatch-alliance/backpatch-spring-data-rest/commit/45e7ea5
+    basis: adapted
+    artifacts:
+      - org.springframework.data:spring-data-rest-webmvc
+    note: Carried from 2.4.18.1-backpatch-00007; ported onto 2.4.18; fixed at 3.7.18.1-backpatch-00007 (backpatch-spring-data-rest@45e7ea5).
+  - cve: CVE-2026-41711
+    upstream_fix_url: https://github.com/spring-projects/spring-data-commons/commit/c3b2abf2968d6fdbd4bbbecf58fec0832ea69755
+    advisory_url: https://nvd.nist.gov/vuln/detail/CVE-2026-41711
+    patch_commit_url: https://github.com/moderne-backpatch-alliance/backpatch-spring-data-commons/commit/39f2e2b
+    basis: adapted
+    artifacts:
+      - org.springframework.data:spring-data-commons
+    note: Carried from 2.4.18.1-backpatch-00009; ported onto 2.4.18; fixed at 2.7.18.1-backpatch-00009 (backpatch-spring-data-commons@39f2e2b).
+  - cve: CVE-2026-41721
+    upstream_fix_url: https://github.com/spring-projects/spring-data-commons/commit/e33b68517cf4e207a36bb3d520a93b3d10842bd4
+    advisory_url: https://nvd.nist.gov/vuln/detail/CVE-2026-41721
+    patch_commit_url: https://github.com/moderne-backpatch-alliance/backpatch-spring-data-commons/commit/d747725
+    basis: adapted
+    artifacts:
+      - org.springframework.data:spring-data-commons
+    note: Carried from 2.4.18.1-backpatch-00010; ported onto 2.4.18; fixed at 2.7.18.1-backpatch-00010 (backpatch-spring-data-commons@d747725).
+  - cve: CVE-2026-41730
+    upstream_fix_url: https://github.com/spring-projects/spring-data-rest/commit/1515a5b46bcd3b8ac8b0a73d1d9f6cfa8b8e300f
+    advisory_url: https://nvd.nist.gov/vuln/detail/CVE-2026-41730
+    patch_commit_url: https://github.com/moderne-backpatch-alliance/backpatch-spring-data-rest/commit/8616143
+    basis: adapted
+    artifacts:
+      - org.springframework.data:spring-data-rest-webmvc
+    note: Carried from 2.4.18.1-backpatch-00011; ported onto 2.4.18; fixed at 3.7.18.1-backpatch-00011 (backpatch-spring-data-rest@8616143).
+  - cve: CVE-2026-41837
+    upstream_fix_url: https://github.com/spring-projects/spring-data-rest/commit/f1bcf063ae959e97221304f49130d52805f8ac86
+    advisory_url: https://nvd.nist.gov/vuln/detail/CVE-2026-41837
+    patch_commit_url: https://github.com/moderne-backpatch-alliance/backpatch-spring-data-rest/commit/f019300
+    basis: adapted
+    artifacts:
+      - org.springframework.data:spring-data-rest-webmvc
+    note: Carried from 2.4.18.1-backpatch-00012; ported onto 2.4.18; fixed at 3.7.18.1-backpatch-00012 (backpatch-spring-data-rest@f019300).
+  - cve: CVE-2026-41697
+    upstream_fix_url: https://github.com/advisories/GHSA-8r2h-xh92-gq57
+    advisory_url: https://nvd.nist.gov/vuln/detail/CVE-2026-41697
+    patch_commit_url: https://github.com/moderne-backpatch-alliance/backpatch-spring-data-relational/compare/2a39e4a~1...81864bc
+    basis: adapted
+    artifacts:
+      - org.springframework.data:spring-data-relational
+    note: New in this release; ported onto 2.4.18; fixed at 2.4.18.1-backpatch-00013 (backpatch-spring-data-relational@2a39e4a..81864bc).
+tests:
+  commit: 81864bca30a0e3148a3b962b2cb48593d4979afa
+  command: mvn -B -T1 -pl spring-data-relational,spring-data-jdbc -am -Dossindex.skip=true -Dmaven.test.failure.ignore=true clean test
+  runtime: openjdk version 1.8.0_382, Apache Maven 3.9.16
+  report: spring-data-relational-2.4.18.1-backpatch-00013-tests.zip
+  report_sha256: e79ebf730c0a7db6b65ab4be4482a9e1c259e636ae075ff97e3556f7194ce8c4
+  result: pass
+  note: 949 tests at the patch commit, 7 of them skipped by the suite, 0 failed, 0 errors.
